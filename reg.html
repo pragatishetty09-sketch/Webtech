@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h3>Registration Form</h3>
+  <form action="#" method="post">
+    <table cellpadding="4" cellspacing="0">
+      <tr>
+        <td>FULL NAME</td>
+        <td>
+          <input type="text" name="firstname" maxlength="20" placeholder="First name (max 20 chars a-z A-Z)">
+        </td>
+        <td>(max 20 char a-z and A-Z)</td>
+      </tr>
+
+      <tr>
+        <td>Lastname</td>
+        <td>
+          <input type="text" name="lastname" maxlength="20" placeholder="Last name (max 20 chars)">
+        </td>
+        <td>(max 20 char a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td>
+          <select name="day">
+            <option value="">Day</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+            <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+            <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+            <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+            <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+            <option>31</option>
+          </select>
+
+          <select name="month">
+            <option value="">Month</option>
+            <option>January</option><option>February</option><option>March</option><option>April</option>
+            <option>May</option><option>June</option><option>July</option><option>August</option>
+            <option>September</option><option>October</option><option>November</option><option>December</option>
+          </select>
+
+          <select name="year">
+            <option value="">Year</option>
+            <option>2000</option><option>2001</option><option>2002</option><option>2003</option>
+            <option>2004</option><option>2005</option><option>2006</option><option>2007</option>
+            <option>2008</option><option>2009</option><option>2010</option><option>2011</option>
+            <option>2012</option><option>2013</option><option>2014</option><option>2015</option>
+            <option>2016</option><option>2017</option><option>2018</option><option>2019</option>
+            <option>2020</option><option>2021</option><option>2022</option><option>2023</option>
+            <option>2024</option><option>2025</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>GENDER</td>
+        <td>
+          <input type="radio" name="gender" value="male" id="male"><label for="male"> male</label>
+          <input type="radio" name="gender" value="female" id="female"><label for="female"> female</label>
+        </td>
+      </tr>
+
+     
+      <tr>
+        <td>EMAIL ID</td>
+        <td><input type="email" name="email" placeholder="example@domain.com"></td>
+      </tr>
+
+      <tr>
+        <td>MOBILE NO</td>
+        <td><input type="tel" name="mobile" maxlength="15" placeholder="Mobile number"></td>
+      </tr>
+
+   
+      <tr>
+        <td>ADDRESS</td>
+        <td><textarea name="address" rows="6" cols="40" placeholder="Enter your address"></textarea></td>
+      </tr>
+
+      <tr>
+        <td>CITY</td>
+        <td><input type="text" name="city"></td>
+      </tr>
+
+      <tr>
+        <td>PINCODE</td>
+        <td>
+          <input type="text" name="pincode" maxlength="6" pattern="\d{6}" placeholder="6 digit number">
+        </td>
+      </tr>
+
+      <tr>
+        <td>EMAIL ID</td>
+        <td><input type="email" name="email2" placeholder="Alternate email (optional)"></td>
+      </tr>
+
+      <tr>
+        <td>STATE</td>
+        <td><input type="text" name="state"></td>
+      </tr>
+
+      <tr>
+        <td>COUNTRY</td>
+        <td><input type="text" name="country"></td>
+      </tr>
+
+      <tr>
+        <td>HOBBIES</td>
+        <td>
+          <input type="checkbox" name="hobby" value="drawing" id="drawing"><label for="drawing"> Drawing</label>
+          <input type="checkbox" name="hobby" value="singing" id="singing"><label for="singing"> Singing</label>
+          <input type="checkbox" name="hobby" value="dancing" id="dancing"><label for="dancing"> Dancing</label>
+          <br>
+          <label>Other</label> <input type="text" name="hobby_other">
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">Qualification</td>
+        <td>
+          <table border="1" cellpadding="3" cellspacing="0">
+            <tr>
+              <th>Sl.no</th><th>Examination</th><th>Board</th><th>Percentage</th><th>Year of pass</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td><input type="text" name="exam1"></td>
+              <td><input type="text" name="board1"></td>
+              <td><input type="text" name="perc1" size="6"></td>
+              <td><input type="text" name="yop1" size="6"></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td><input type="text" name="exam2"></td>
+              <td><input type="text" name="board2"></td>
+              <td><input type="text" name="perc2" size="6"></td>
+              <td><input type="text" name="yop2" size="6"></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td><input type="text" name="exam3"></td>
+              <td><input type="text" name="board3"></td>
+              <td><input type="text" name="perc3" size="6"></td>
+              <td><input type="text" name="yop3" size="6"></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td><input type="text" name="exam4"></td>
+              <td><input type="text" name="board4"></td>
+              <td><input type="text" name="perc4" size="6"></td>
+              <td><input type="text" name="yop4" size="6"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>COURSES APPLIED FOR</td>
+        <td>
+          <input type="checkbox" name="course" value="BCA" id="bca"><label for="bca"> BCA</label>
+          <input type="checkbox" name="course" value="B.com" id="bcom"><label for="bcom"> B.com</label>
+          <input type="checkbox" name="course" value="B.sc" id="bsc"><label for="bsc"> B.sc</label>
+          <input type="checkbox" name="course" value="B.A" id="ba"><label for="ba"> B.A</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="submit">
+          <input type="reset" value="reset">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>
+    
+</body>
+</html>
